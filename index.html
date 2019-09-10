@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+ <html lang="ja">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <title>逆求人サイト</title>
+    </head>
+
+    <body>
+      <div class="header">
+        <div class="header-logo">Marimo Mori</div>
+        <div class="header-list">
+          <ul>
+            <li><a href="#自己紹介" style="text-decoration: none;">自己紹介</a><br>
+            <span style="color:bisque">PROFILE</span></li>
+            <li><a href="#経歴" style="text-decoration: none;">経歴</a><br>
+            <span style="color:bisque">BACKGROUND</span></li>
+            <li><a herf="私の強み" style="text-decoration: none;">私の強み</a><br>
+            <span style="color:bisque">STRENGTH</span></li>
+            <li><a href="#特性" style="text-decoration: none;">特性</a><br>
+            <span style="color:bisque">FEATURE</span></li>
+            <li><a href="#お問い合わせ" style="text-decoration: none;">お問い合わせ</a></br>
+            <span style="color:bisque">CONTACT</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="profile">
+        <h1 class="section-title"><a name="自己紹介">自己紹介</a></h1>
+        <h2>上から読んでも下から読んでも”もりまりも”</h2>
+        <div class="aboutme">
+            <p>森 まりも<br>
+              立命館大学<br>
+              スポーツ健康科学部３回生<br>
+              奈良出身<br>
+              座右の銘：Stay hungry. Stay foolish.
+            </p>
+            <a href="http://twitter.com/m__rm1027">
+             <span class="fab fa-twitter">
+               ::before
+               "&nbsp;"
+             </span>
+             </a>
+
+<!--  自分の写真 -->
+        <div class="image1">
+        <p><img src="images/baby.jpeg" width="400px" height="350px"></p>
+        </div>
+        </div>
+      </div>
+
+        <h3 class="section-title"><a name="経歴">経歴</a></h3>
+       <div class="background">
+            <li>高校：高校でバスケ頑張る</li>
+            <li>志望校に落ちる→ 浪人生活…</li>
+            <li>大学1：希望の学部に！</li>
+            <li>大学2夏：カナダ留学（UBC: University of British Columbia）</li>
+　          <li>大学3：未来電子テクノロジーでインターンシップを始める</li>
+       </div>
+
+        <!-- 以下、画像切り替えコード -->
+       <img id="mypic" src="images/UBC.jpeg" width="700px" height="480px">
+       <script>
+         var pics = new Array("images/UBC.jpeg","images/beach.jpeg","images/aurora.jpg","images/clock.jpeg","images/navigater.jpg","images/sky.jpeg","images/Washinton.jpg");
+         var num = -1;
+         slideshow_timer();
+           function slideshow_timer(){
+             if (num == 6){
+                 num = 0;
+             }
+             else {
+               num ++;
+             }
+             document.getElementById("mypic").src=pics[num];
+             setTimeout("slideshow_timer()",1500);
+         }
+       </script>
+
+
+
+      　 <h4 class="section-title"><a name="私の強み">私の強み</a></h4>
+
+
+        <h5 class="section-title"><a name="特性">特性</a></h5>
+        <img src="./images/cat.jpeg" width="400px" height="350px">
+
+
+      <div class="contents">
+          <h3 class="section-title">   </h3>
+          <div class="contents-item">
+
+            <p></p>
+          </div>
+          <div class="contents-item">
+            <img src="">
+            <p></p>
+          </div>
+          <div class="contents-item">
+            <img src="">
+            <p></p>
+          </div>
+          <div class="contents-item">
+            <img src="">
+            <p></p>
+          </div>
+        </div>
+
+
+
+　   <div class="contact-form">
+      <h3 class="section-title"><a name="お問い合わせ"></a>お問い合わせ</h3>
+      <P>氏名・会社</P>
+      <input>
+      <p>メールアドレス</p>
+      <input>
+      <p>お問い合わせ内容</p>
+      <textarea></textarea>
+      <input class="contact-submit" type="submit" value="送信">
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">Marimo Mori</div>
+      <div class="footer-list">
+        <ul>
+          <li>Twitter</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+ </html>
